@@ -7,9 +7,37 @@
 //
 
 #include <iostream>
+#include <iomanip>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+#include "code_primary_lib.hpp"
+#include "else摇摆问题（sway）.hpp"
+
+//void test1()
+//{
+//    cout << "hello world" << endl;
+//}
+
+int main(int argc, const char * argv[])
+{
+//    test1();
+//    printPrincipal();
+    
+    int x, y;
+    x = 9;
+    y = 11;
+    
+//    else1(x, y);
+    else2(x, y);
+    cout << fixed << setw(4);
+    cout << "x(" << x << "), y(" << y <<")" <<endl;
+    
+    x = 11;
+    y = 9;
+    
+//    else1(x, y);
+    else2(x, y);
+    cout << fixed << setw(4);
+    cout << "x(" << x << "), y(" << y <<")" <<endl;
 }
